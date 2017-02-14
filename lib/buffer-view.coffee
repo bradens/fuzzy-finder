@@ -3,6 +3,18 @@ FuzzyFinderView = require './fuzzy-finder-view'
 
 module.exports =
 class BufferView extends FuzzyFinderView
+  initialize: ->
+    super
+
+    atom.commands.add @element,
+      'fuzzy-finder:close-buffer': => @closeBuffer()
+
+  closeBuffer: ->
+    {filePath} = @getSelectedItem() ? {}
+    foundEditor = _.find(atom.workspace.getPaneItems(), (editor) -> editor.getPath() is filePath)
+    foundEditor.destroy?()
+    @populate()
+
   toggle: ->
     if @panel?.isVisible()
       @cancel()
