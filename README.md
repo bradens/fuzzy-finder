@@ -1,5 +1,10 @@
-# Fuzzy Finder package
-[![OS X Build Status](https://travis-ci.org/atom/fuzzy-finder.svg?branch=master)](https://travis-ci.org/atom/fuzzy-finder) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/b4b2dg5n9r1wdqad/branch/master?svg=true)](https://ci.appveyor.com/project/Atom/fuzzy-finder/branch/master) [![Dependency Status](https://david-dm.org/atom/fuzzy-finder.svg)](https://david-dm.org/atom/fuzzy-finder)
+# Fuzzy Finder Buffers package
+
+*This is a fork of the great [fuzzy-finder](https://github.com/atom/fuzzy-finder) package*
+
+The difference is that in the buffer list, you can close the buffers by hitting `ctrl-k` or remapping to `fuzzy-finder:close-buffer`
+
+---
 
 Quickly find and open files using <kbd>cmd-t</kbd>.
 
