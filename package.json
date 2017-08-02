@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-finder-buffers",
-  "version": "1.5.0",
+  "version": "1.5.3",
   "main": "./lib/main",
   "description": "Fork of the fuzzy-finder package, with buffer closing.",
   "repository": "https://github.com/bradens/fuzzy-finder",
