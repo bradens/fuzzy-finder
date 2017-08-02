@@ -11,7 +11,7 @@ class BufferView extends FuzzyFinderView
 
   closeBuffer: ->
     {filePath} = @getSelectedItem() ? {}
-    foundEditor = _.find(atom.workspace.getPaneItems(), (editor) -> editor.getPath() is filePath)
+    foundEditor = _.find(atom.workspace.getPaneItems(), (editor) -> editor.getPath?() is filePath)
     foundEditor.destroy?()
     @populate()
 
